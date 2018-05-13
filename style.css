@@ -1,10 +1,37 @@
-.navbar{
+/* Navigation */
+#main-navigation{
     background-color: maroon;
 }
 
 
+/* Chat */
+.chat-message-other{
+    background-color: gray;
+    margin-left: -10px; /*Change to %*/
+    margin-right: 50px;
+}
 
-/*Code from Bootstrap Bare template*/
+.chat-message-other-text{
+    padding-top: 5px;
+    padding-bottom: 5px; /*Change to em!*/
+
+}
+
+.chat-message-self{
+    background-color: green;
+    margin-left: 50px;
+    margin-right: -10px;
+
+}
+
+.chat-message-self-text{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+/* Code from Bootstrap Bare template (this was originally provided inline on the index.html page, move it here for readability)*/
 body {
     padding-top: 54px;
 }
