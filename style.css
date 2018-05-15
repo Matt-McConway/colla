@@ -3,6 +3,11 @@
     background-color: #690300;
 }
 
+#main-container-frame{
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* Chat */
 .chat-message-other{
     background-color: gray;
