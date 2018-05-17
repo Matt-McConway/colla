@@ -8,6 +8,15 @@
     padding-right: 0;
 }
 
+#public-chat-container{
+    padding-right: 0;
+    margin-right: 0;
+}
+
+#main-row{
+    width: 100.8%;
+}
+
 /* Chat */
 .chat-message-other{
     background-color: gray;
@@ -33,6 +42,16 @@
     padding-bottom: 5px;
 }
 
+.image-carousel:hover{
+    background:rgba(0, 0, 0, 0.5);
+    
+}
+
+.carousel-inner{
+    width: auto;
+    height: 480px;
+    max-height: 480px;
+}
 
 
 /* Code from Bootstrap Bare template (this was originally provided inline on the index.html page, move it here for readability)*/
