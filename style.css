@@ -8,6 +8,10 @@
     padding-right: 0;
 }
 
+#problem-card{
+    overflow: auto;
+}
+
 #public-chat-container{
     padding-right: 0;
     margin-right: 0;
