@@ -82,4 +82,5 @@ Probably won't use these, but I'll leave this section here.
 
 ## Resource Credit
 Bootstrap, etc
-
+Paletton for palette generation
+https://www.flaticon.com/packs/kids-avatars Icons
