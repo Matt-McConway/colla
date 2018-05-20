@@ -42,6 +42,12 @@
     min-height: 50vh;
 }
 
+.chat-avatar{
+    border-radius: 50%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 #main-row{
     width: 100.8%;
 }
@@ -51,11 +57,13 @@
     background-color: gray;
     margin-left: -10px; /*Change to %*/
     margin-right: 50px;
+    border-radius: 4px;
 }
 
 .chat-message-other-text{
     padding-top: 5px;
     padding-bottom: 5px; /*Change to em!*/
+    margin-right: 40%;
 
 }
 
@@ -63,12 +71,14 @@
     background-color: green;
     margin-left: 50px;
     margin-right: -10px;
+    border-radius: 4px;
 
 }
 
 .chat-message-self-text{
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-left: 40%;
 }
 
 .image-carousel:hover{
@@ -79,7 +89,21 @@
     text-shadow: 2px 2px 8px #000000;
 }
 
+.chat-avatar-other{
+    border-radius: 50%;
+    float: left;
+    max-height: 8%;
+    max-width: 8%;
+    padding-top: 2px;
+}
 
+.chat-avatar-self{
+    border-radius: 50%;
+    float: right;
+    max-height: 8%;
+    max-width: 8%;
+    padding-top: 2px;
+}
 
 /*
 .carousel-inner{
