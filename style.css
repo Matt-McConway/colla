@@ -9,7 +9,7 @@
 }
 
 #problem-card{
-    overflow: auto;
+    overflow-y: scroll;
 }
 
 #public-chat-container{
@@ -17,9 +17,26 @@
     margin-right: 0;
 }
 
-#public-chat-card{
-    min-height: 100%;
+#public-chat-submission{
+    position: absolute;
+    bottom:0;
+    width:90%;
+    /* Testing purposes :)
+    border: solid;
+    border-color: #690300;
+    border-width: 3px; */
 }
+
+#public-chat-card{
+    min-height: 95vh;
+}
+
+
+.card-column-height{
+    min-height: 95vh;
+    max-height: 95vh;
+}
+
 
 #main-row{
     width: 100.8%;
@@ -52,15 +69,19 @@
 
 .image-carousel:hover{
     background:rgba(0, 0, 0, 0.5);
-    
 }
 
+#caption-text{
+    text-shadow: 2px 2px 8px #000000;
+}
+
+/*
 .carousel-inner{
     width: auto;
     height: 480px;
     max-height: 480px;
 }
-
+*/
 
 /* Code from Bootstrap Bare template (this was originally provided inline on the index.html page, move it here for readability)*/
 body {

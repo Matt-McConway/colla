@@ -52,7 +52,7 @@
       <div class="row" id="main-row">
         <!-- Leftmost column -->
         <div class="col-lg-3 text-center">
-          <div class="card">
+          <div class="card card-column-height">
             <div class="card-header">
               <h1 class="card-title">Side Navigation</h1>
             </div>
@@ -60,24 +60,20 @@
               <h5 class="card-title">My Submissions</h5>
               <p class="card-text">Submission 1</p>
             </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
+            <div class="card-footer bg-transparent">
               Chat heads
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Heads</h5>
-              <p class="card-text">Faces</p>
+
             </div>
           </div>
+          
         </div>
         <!-- Middle column -->
         <div class="col-lg-6" id="main-container-frame">
-          <div class="card" id="problem-card">
+          <div class="card card-column-height">
             <div class="card-header">
               <h1 class="card-title">Problem 1:</h1>
             </div>
-            <div class="card-body">
+            <div class="card-body" id="problem-card">
                 <h5>Aim: Distinguish stylistic differences between modernist movements</h5>
                 
                 <hr>
@@ -87,7 +83,7 @@
                 <p><b>This definition may help you:</b><br>Style refers to the characteristics of an art work that, when combined, distinguish the style of an artist, art movement, period, or place.
                   These characteristics may include ways of using line, colour, tone, light, form, composition, space, scale, shape, mass, texture, ornament, and media.</p>
                 
-                <p>Stylistic characteristics (choose TWO):</p>
+                <p><b>Stylistic characteristics (choose TWO):</b></p>
                 <ul>
                   <li>Light</li>
                   <li>Form</li>
@@ -96,7 +92,7 @@
                   <li>Ornament</li>
                   <li>Modernist Design</li>
                 </ul>
-                <p>Images (choose TWO):</p>
+                <p><b>Images (choose TWO):</b></p>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -108,35 +104,35 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img class="d-block w-100" src="/images/problem/Bonheur_Matisse_Opti.jpg" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block image-carousel">
+                        <div class="carousel-caption d-none d-md-block image-carousel" id="caption-text">
                             <h5>Le Bonheur de vivre (The Joy of Life)</h5>
                             <p>Henri Matisse, 1905</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="/images/problem/Dancer_Kirchner_Opti.jpg" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block image-carousel">
+                        <div class="carousel-caption d-none d-md-block image-carousel" id="caption-text">
                             <h5>Dancer with Raised Skirt</h5>
                             <p>Ernst Kirchner, 1909</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                           <img class="d-block w-100" src="/images/problem/Dandy_Hoch_Opti.jpeg" alt="Second slide">
-                          <div class="carousel-caption d-none d-md-block image-carousel">
+                          <div class="carousel-caption d-none d-md-block image-carousel" id="caption-text">
                               <h5>Da Dandy</h5>
                               <p>Hannah Hoch, 1919</p>
                           </div>
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="/images/problem/Muse_Brancusi_Opti.jpg" alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block image-carousel">
+                            <div class="carousel-caption d-none d-md-block image-carousel" id="caption-text">
                                 <h5>Sleeping Muse</h5>
                                 <p>Constantin Brancusi, 1910</p>
                             </div>
                           </div>
                           <div class="carousel-item">
                               <img class="d-block w-100" src="/images/problem/Swans_Dali_Opti.jpg" alt="Second slide">
-                              <div class="carousel-caption d-none d-md-block image-carousel">
+                              <div class="carousel-caption d-none d-md-block image-carousel" id="caption-text">
                                   <h5>Swans reflecting Elephants</h5>
                                   <p>Salvador Dali, 1937</p>
                               </div>
@@ -151,6 +147,13 @@
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
+                  <p><br><b>Question (a):</b><br>
+
+                    Using supporting evidence from the art works and their contexts, explain the treatment of your two chosen stylistic characteristics in EACH of the two art works.<br>
+                    <br>
+                    <b>Question (b):</b><br>
+                    Explain the reasons for the similarities and differences between the styles of the two art works with reference to the time and place each artist was working in.
+                    </p>
             </div>
           </div>
         </div>
@@ -167,12 +170,14 @@
               <div class="chat-message-self">
                 <p class="chat-message-self-text">Nope! Just starting now!!</p>
               </div>
-              <form>
-                <div class="form-group">
-                  <textarea class="form-control" id="public-chat-box" placeholder="Type your message" rows="1"></textarea>
-                </div>
-              </form>
-              <a href="#" class="btn btn-primary">Send</a>
+              <div class="card-footer bg-transparent" id="public-chat-submission">
+                <form>
+                  <div class="form-group">
+                    <textarea class="form-control" id="public-chat-box" placeholder="Type your message" rows="2"></textarea>
+                  </div>
+                </form>
+                <a href="#" class="btn btn-primary">Send</a>
+              </div>
             </div>
           </div>
         </div>
