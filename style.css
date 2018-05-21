@@ -8,6 +8,22 @@
     padding-right: 0;
 }
 
+
+#dropdown-edit{
+    color: #690300;
+
+}
+
+#dropdown-edit:hover{
+    color: #000000;
+    
+}
+
+#buttons{
+    background-color: #690300;
+    border-color: #690300;
+}
+
 #problem-card{
     overflow-y: scroll;
 }
@@ -21,13 +37,9 @@
     position: absolute;
     bottom:0;
     width:90%;
-    /* Testing purposes :)
-    border: solid;
-    border-color: #690300;
-    border-width: 3px; */
 }
 
-#problem-edit-button{
+.problem-edit-button{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -44,8 +56,8 @@
 
 .chat-avatar{
     border-radius: 50%;
-    max-height: 100%;
-    max-width: 100%;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 #main-row{
@@ -54,7 +66,7 @@
 
 /* Chat */
 .chat-message-other{
-    background-color: gray;
+    background-color: #F7A7A5;
     margin-left: -10px; /*Change to %*/
     margin-right: 50px;
     border-radius: 4px;
@@ -68,7 +80,7 @@
 }
 
 .chat-message-self{
-    background-color: green;
+    background-color: #690300;
     margin-left: 50px;
     margin-right: -10px;
     border-radius: 4px;
@@ -79,6 +91,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 40%;
+    color: #FFFFFF;
 }
 
 .image-carousel:hover{
@@ -105,13 +118,7 @@
     padding-top: 2px;
 }
 
-/*
-.carousel-inner{
-    width: auto;
-    height: 480px;
-    max-height: 480px;
-}
-*/
+
 
 /* Code from Bootstrap Bare template (this was originally provided inline on the index.html page, move it here for readability)*/
 body {
@@ -122,4 +129,45 @@ body {
     body {
         padding-top: 56px;
     }
+}
+
+
+/* SOURCE: Code from Bootstrap Editor Plugin: https://github.com/mindmup/bootstrap-wysiwyg END SOURCE */
+#editor {
+	max-height: 250px;
+	height: 250px;
+	background-color: white;
+	border-collapse: separate; 
+	border: 1px solid rgb(204, 204, 204); 
+	padding: 4px; 
+	box-sizing: content-box; 
+	-webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset; 
+	box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
+	border-top-right-radius: 3px; border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px; border-top-left-radius: 3px;
+	overflow: scroll;
+	outline: none;
+}
+#voiceBtn {
+  width: 20px;
+  color: transparent;
+  background-color: transparent;
+  transform: scale(2.0, 2.0);
+  -webkit-transform: scale(2.0, 2.0);
+  -moz-transform: scale(2.0, 2.0);
+  border: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+div[data-role="editor-toolbar"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-menu a {
+  cursor: pointer;
 }
